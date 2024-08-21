@@ -1,0 +1,23 @@
+.PreviewTable {
+	display: block;
+	overflow-x: auto;
+	overflow-y: hidden;
+	white-space: nowrap;
+	height: 32vh;
+	width: 100vw;
+}
+
+.PreviewItem {
+	border: 1px solid black;
+	height: 31vh;
+	min-width: 20vh;
+	font-size: 5vh;
+	text-align:center;
+	vertical-align:top;
+}
+. {
+  touch-action: none;
+}
+* {
+	user-select: none;
+}

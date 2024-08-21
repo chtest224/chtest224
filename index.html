@@ -1,0 +1,27 @@
+<html>
+<head>
+	<link rel="stylesheet" href="styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+</head>
+<body>
+<div id="all" style="overflow-y:hidden; position:fixed; top:0;left:0;right:0;bottom:0;width:100vw;height:100vh">
+	<div id="buttons1" style="position:fixed; left:0;right:0;top:0;height:7vh">
+		<button type=button id="ResetButton" style="position:fixed;left:0;width:30vw;height:7vh;font-size:4vw;">Reset Current</button>
+		<a id="Output" type="text/html" style="position:fixed;top:0;left:40vw;overflow-y:scroll;height:7vh;width:28vw;font-size:2vw;font-size:2vh"></a>
+		<button type=button id="CopyButton" style="position:fixed;right:0;width:30vw;height:7vh; font-size:5vw;">Copy</button>
+	</div>
+	<div id="buttons" style="position:fixed; left:0;right:0;top:8vh;height:7vh">
+		<a id="CurrentChar" type="text/html" style="position:fixed;top:1vh;left:1vw;height:6vh;width:28vw;font-size:10vw;outline:0px solid black; text-align:center;vertical-align:middle;line-height:20.5vh">A</a>
+		<button type=button id="SaveButton" style="position:fixed;right:0;width:60vw;height:7vh;font-size:5vw;">Save Current Character</button>
+	</div>
+	<canvas id="Canvas" width="0" height="0" style="border:1px solid black; position:fixed; left:0;right:0;top:16vh;"></canvas>
+	<div style="position:fixed; left:0;right:0;top:67vh;">
+		<table class="PreviewTable" id="PreviewTable"/>
+			<tbody class="PreviewTable">
+				<tr class="PreviewTable" id="TableRows">
+				</tr>
+			</tbody>
+	</div>
+<script src="Main.js"></script>
+</div>
+</html>
