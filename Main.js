@@ -188,6 +188,7 @@ function save() {
     }
     let button = document.getElementById("button"+idx)
     if (saved.length > 0) {
+      document.getElementById("smallCanvas"+idx).getContext("2d").clearRect(0,0,canvas.width,canvas.height)
       document.getElementById("smallCanvas"+idx).getContext("2d").drawImage(canvas,0,0);
       if (data[letters[idx]] == undefined)
 	done++;
