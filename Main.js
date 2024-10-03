@@ -1,5 +1,5 @@
 
-var letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789,?.'@#$-_\u201c\u201d:;"
+var letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789,?.'@#$-_\u201c\u201d:;+"
 var idx = 0
 
 var canvas  = document.getElementById("Canvas");
