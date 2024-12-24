@@ -29,7 +29,21 @@ document.getElementById("ResetButton").onclick = clear;
 document.getElementById("CopyButton").onclick = copy;
 
 function copy() {
-  navigator.clipboard.writeText(JSON.stringify(data))
+
+  save();
+
+  text_to_save = JSON.stringify(data)
+
+  var element = document.createElement('a');
+  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text_to_save));
+  element.setAttribute('download', "myfont.txt");
+
+  element.style.display = 'none';
+  document.body.appendChild(element);
+
+  element.click();
+
+  document.body.removeChild(element);
 }
 
 var currentChar = document.getElementById("CurrentChar");
