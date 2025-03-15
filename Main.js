@@ -246,7 +246,7 @@ function handleMouseMove(e) {
     posY -= canvasBound.top;
 
     if (mouseDown == 1) {
-	  context.fillRect(posX-10, posY-10, 2,2)
+	  context.fillRect(posX, posY, 2,2)
 	  l.push([posX, posY])
     }
   }
